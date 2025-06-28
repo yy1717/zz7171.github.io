@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Admissions - MindRead University </title>
+  <link rel=icon href=logo.png type=image/png>
+  <link rel = "stylesheet" href="WEBSITE.css">
+  <script src="ADMISSIONS.js"></script>
+  <meta name=viewport content=width=width-device, initial-scale=1.0>
+</head>
+<body>
+  <header>
+    <a href="HOMEPAGE.html">
+    <div class="NAME">MindRead University</div>
+    </a>
+    <nav>
+      <a href="ABOUT.html">About</a>
+      <a href="PROGRAMMES.html">Programmes</a>
+      <a href="ADMISSIONS.html">Apply</a>
+      <a href="CONTACT.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="admissions-form">
+    <h1> Apply to MindRead University </h1><br>
+    <form id="admissions-form">
+      Full Name: <input type="text" id="name" name="name" required><br>
+      
+      Email Address: <input type="email" id="email" name="email" required><br>
+
+      Course:
+      <select id="programmes" name="programmes">
+        <option align=center value="" disabled selected>-- Please Choose --</option>
+        <option value="Criminal Psychology"> Criminal Psychology </option>
+        <option value="Behavioral Profiling"> Behavioral Profiling </option>
+        <option value="Cyberpsychology"> Cyberpsychology </option>
+        <option value="Victimology"> Victimology </option>
+        <option value="Psychopathy and Serial Killers"> Psychopathy and Serial Killers </option>
+        <option value="Forensic Psychology"> Forensic Psychology </option>
+      </select><br>
+
+      Create Password: <input type="password" id="password" name="password">
+      <div id="strength-msg"></div><br>
+
+      Why do you want to join? <textarea id="message" name="message" rows="5" required>
+      </textarea><br>
+
+      <button type="submit"> Submit Application </button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 MindRead University | Contact us at info@mindread.edu</p>
+  </footer>
+</body>
+</html>

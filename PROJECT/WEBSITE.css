@@ -1,0 +1,406 @@
+body {
+  font-family: "Gill Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  background-color: #FDFDFD;
+}
+
+/* Header */
+header {
+  font-size: 25px;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+/* Header's link */
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Navigation's link */
+nav a {
+  color: #FFFFFF;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* The intro part */
+.intro {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* Video as bg inside the intro part */
+.video-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* The layout of the content inside the inro part */
+.intro .content {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 20px;
+}
+
+/* The setting of the content inside the inro part */
+.intro .content h1,
+.intro .content h2,
+.intro .content p  {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+
+/* typesetting of the card section */
+.cards-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #ECF0F1;
+  color: #3A3B3C;
+}
+
+/* The texts that beside the cards, is the introduction about MRU */
+.left-text {
+  font-size: 20px;
+  width: 60%;
+}
+
+/* card sorting from up to down (column) */
+.right-cards {
+  display: flex;
+  flex-direction: column;
+  width: 45%
+}
+
+/* The design or the card */
+.card {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #3A3B3C;
+  cursor: pointer;
+}
+
+
+/* Transition of Card */
+.card:hover {
+  background-color: rgba(150, 150, 150, 0.4);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* The link design of the card */
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3A3B3C;
+  text-decoration: none;
+}
+
+/* News' design */
+.news {
+  padding: 30px 20px;
+}
+
+/* The link of the news title */
+.news-heading a { 
+  font-size: 32px;
+  display: inline-block;
+  color: #3A3B3C;
+  text-decoration: none;
+  background-color: rgba(236, 240, 241, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.news h2 { 
+  text-align: center;
+}
+
+/* The card of the news (left to right) */
+.news-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Explain to the news' card */
+.news-item {
+  width:450px;
+  text-align: left;
+  margin: 8px;
+}
+
+/* transition of the news' card */
+.news-item img {
+  width:400px;
+  height:300px;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* The design of p tag in news-item class */
+.news-item p {
+  font-size: 16px;
+  color: #3A3B3C;
+}
+
+/* The design of a tag in news-item class */
+.news-item a {
+  color: #3A3B3C;
+  text-decoration: none;
+}
+
+/* transition of news-item */
+.news-item:hover img {
+  transform: scale(1.05);
+}
+
+/* The design of footer */
+footer {
+  background: #1A1A1A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Design the content in the programmes */
+.programmes {
+  margin-top: 0px;
+  padding: 40px 20px 60px 20px;
+  text-align: center;
+  background-color: #F5F6FA;
+}
+
+.programmes a {
+  text-decoration: none;
+}
+
+.programmes h1 {
+  color: #3A3B3C;
+  font-size: 34px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.programmes h3 {
+  color: #262626;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 10px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.programmes p {
+  color: #262626;
+  font-size: 17px;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 10px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+/*  */
+.programme-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 20px
+}
+
+.programme-card {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  border: 1px solid #E0E0EB;
+  background: #FFFFFF;
+  padding: 20px;
+  width: 23%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.programme-card .card-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(1.5px);
+  z-index: 1;
+}
+
+.programme-card .card-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+.programme-card:hover {
+  background-color: rgba(150, 150, 150, 0.4);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admissions-form {
+  background-image: url(pic/bg2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admissions-form h1{
+  color: #3A3B3C;
+  font-size: 34px;
+  margin-top: 18px;
+  margin-bottom: -15px;
+  text-align: center;
+}
+
+#admissions-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+  font-size: 20px;
+  color: #FDFDFD;
+  font-weight: bold;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px 0px;
+}
+
+#admissions-form input,
+#admissions-form select, 
+#admissions-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+#admissions-form button {
+  background: #666699;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.about {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #3A3B3C;
+}
+
+.about p {
+  max-width: 420px;
+}
+
+.about:hover {
+  background-color: rgba(150, 150, 150, 0.4);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form {
+  background-image: url(pic/bg1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 500px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-form h1 {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 34px;
+  color: #3A3B3C;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+table, th, td {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  border: 1px solid black;
+  background-color: #333333;
+  border-radius: 8px;
+}
+
+table a {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+  color: #FDFDFD;
+  font-weight: bold;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px 0px;
+}
+
+.news-item .date{
+  font-size: 0.9em;
+  color: #3A3B3C;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
